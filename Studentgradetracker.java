@@ -2,16 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/*
- * ============================================================
- * Author      : Nancy Bana
- * Internship  : CodeAlpha Java Programming Internship
- * Project     : Student Grade Tracker (Task 1)
- * Language    : Java
- * Year        : 2026
- * ============================================================
- */
-
  class Studentgradetracker {
 public static void main(String[] args) {
     new Studentgradetracker().run();
@@ -20,7 +10,7 @@ public static void main(String[] args) {
 
     private static final double PASS_MARK = 40.0;
 
-    // ---------- Student model ----------
+   
     static class Student {
         private final String id;
         private final String name;
@@ -74,14 +64,10 @@ public static void main(String[] args) {
         }
     }
 
-    // ---------- Application state ----------
+  
     private final List<Student> students = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
     private int nextId = 1;
-
-    // public static void main(String[] args) {
-    //     new Studentgradetracker.run();
-    // }
 
     private void run() {
         boolean running = true;
@@ -196,7 +182,7 @@ public static void main(String[] args) {
         return students.get(index);
     }
 
-    // ---------- Input helpers ----------
+   
     private int readInt(String prompt) {
         System.out.print(prompt);
         while (!scanner.hasNextInt()) {
